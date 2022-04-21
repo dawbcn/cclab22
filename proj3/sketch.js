@@ -5,8 +5,9 @@ let dia;
 let R, G, B;
 
 function setup() {
-  createCanvas(600, 600);
-  background(0);
+  let canvas = createCanvas(600, 600);
+  canvas.id("p5-canvas");
+  background("#D0D2D6");
   frameRate(30);
   //setupGif(30);   // 30 [fps] is how fast the gif will play back
   x = 150;

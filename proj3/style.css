@@ -4,4 +4,55 @@ html, body {
 }
 canvas {
   display: block;
+  background:(0);
+  
 }
+h1{
+  text-align: center;
+  color: #27385F  ;
+  font-family:"Courier New";
+  font-size: 50pt;
+  font-weight:bold;
+  
+}
+h3{
+  text-align: center;
+  position: relative;
+  top: -40px;
+  color: #27385F   ;
+  font-family:“Goudy Old Style”, Garamond, “Big Caslon”, “Times New Roman”, serif;
+  font-size: 14pt;
+  
+}
+#link{
+  text-align: center;
+  position: absolute;
+  left: 570px;
+  top: 1000px;
+  color:blue;
+  font-family:"Montserrat";
+  font-size: small;
+}
+p{
+  color: black;
+  font-family:"Courier";
+  font-size: 13pt;
+}
+#p5-canvas{
+  position: absolute;
+  left: 420px;
+  top: 400px;
+}
+
+div{
+  width: 630px;
+  height: 50px;
+
+  border-width: 5px;
+
+  padding: 10px 50px 150px 50px;
+  background-color:#D0D2D6;
+  margin: -30px 360px;
+}
+
+
