@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+html {
+  background:linear-gradient(100deg, #b6b88c,rgba(255,255,255,0)) ;
+
+}
+h1{
+  text-align:center;
+  position: relative;
+  color: #382d28  ;
+  font-family:"Copperplate";
+  font-size: 60pt;
+  font-weight:bold;
+  
+}
+#p5-canvas{
+  position: relative;
+  left: 400px;
+  top: -405px;
+}
+h3{
+  text-align: center;
+  position: relative;
+  top: -40px;
+  color: #382d28   ;
+  font-family:"Copperplate";
+  font-size: 18pt;
+  
+}
+div{
+  font-family: "Copperplate";
+  font-size: 15pt;
+  text-align: center;
+  width: 300px;
+  height: -330px;
+
+  border-width: 5px;
+
+  padding: 1px 35px 20px 35px;
+  background-color:#ebeaca;
+  margin: -30px 15px;
+}
+.button1{
+  position: relative;
+  left: 1200px;
+  top: -300px;
+  border:#382d28;
+  color:#382d28 ;
+  background-color:#faf8b4 ;
+  padding: 32px 32px;
+  text-align: center;
+  font-style: "Copperplate";
+  display:inline-block;
+  font-size: 16px;
+  margin: 6px 6px;
+}
