@@ -6,13 +6,13 @@ canvas {
   display: block;
 }
 html {
-  background:linear-gradient(100deg, #b6b88c,rgba(255,255,255,0)) ;
+  background:linear-gradient(60deg, #38bcf5,rgba(0,169,231,0)) ;
 
 }
 h1{
   text-align:center;
   position: relative;
-  color: #382d28  ;
+  color: ("65,65,65")  ;
   font-family:"Copperplate";
   font-size: 60pt;
   font-weight:bold;
@@ -27,35 +27,98 @@ h3{
   text-align: center;
   position: relative;
   top: -40px;
-  color: #382d28   ;
+  color:  ("65,65,65")  ;
   font-family:"Copperplate";
   font-size: 18pt;
   
 }
-div{
+.text{
+  
   font-family: "Copperplate";
   font-size: 15pt;
   text-align: center;
   width: 300px;
   height: -330px;
 
-  border-width: 5px;
+  border-radius: 100px;
+
+  margin-top: 100px;
+  margin-bottom: 250px;
+  margin-left: 540px;
+  margin-right: 100px;
 
   padding: 1px 35px 20px 35px;
-  background-color:#ebeaca;
-  margin: -30px 15px;
+  background:rgba(255, 255, 255, 0.85);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
 }
-.button1{
+
+.cloud{
   position: relative;
-  left: 1200px;
-  top: -300px;
-  border:#382d28;
-  color:#382d28 ;
-  background-color:#faf8b4 ;
-  padding: 32px 32px;
-  text-align: center;
-  font-style: "Copperplate";
-  display:inline-block;
-  font-size: 16px;
-  margin: 6px 6px;
+  left: 50px;
+  bottom: 890px;
+  width:320px;
+  height:100px;
+  background:rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
+  border-radius:100px;
+
 }
+.cloud2{
+  position: relative;
+  left: 850px;
+  bottom: 770px;
+  width: 280px;
+  height: 100px;
+  background:rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
+  border-radius:100px;
+
+}
+.cloud3{
+  position: relative;
+  left: 50px;
+  bottom: 700px;
+  width: 420px;
+  height:120px;
+  background:rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
+  border-radius:100px;
+
+}
+
+.cloud4{
+  position: relative;
+  left: 1080px;
+  bottom: 650px;
+  width: 320px;
+  height:180px;
+  background:rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
+  border-radius:100px;
+
+}
+
+.cloud5{
+  position: relative;
+  left: 280px;
+  bottom: 920px;
+  width: 230px;
+  height:120px;
+  background:rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
+  border-radius:100px;
+
+}
+.cloud6{
+  position: relative;
+  left: 1000px;
+  bottom:980px;
+  width: 180px;
+  height:80px;
+  background:rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242,0.2);
+  border-radius:100px;
+
+}
+
+
