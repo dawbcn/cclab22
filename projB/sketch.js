@@ -1,6 +1,7 @@
 let colorPalette = ["#00a9e7"];
 
 let drop = [];
+let clouds = [];
 let rain;
 let thunder;
 
@@ -14,15 +15,32 @@ let listOfColors = ["#4a6583", "#6c8094", "#4e6881", "#697a8c", "#3c5369"];
 function preload() {
 	rain = loadSound("rain.mp3");
 	thunder = loadSound("thunder.mp3");
+	wind = loadSound("wind.mp3");
+	birds = loadSound("birds.mp3");
+	leaves = loadSound ("leaves.mp3");
 }
-function CreateThunder() {
+function LightningSound() {
 	thunder.play();	
 }
+function RainSound(){
+	rain.play();
+	setVolume(0.5)
+}
+function BirdSound(){
+	birds.play();
+}
+function LeaveSound(){
+	leaves.play();
+}
+function WindSound(){
+	wind.play();
+	setVolume(0.1)
+}
 function displayClouds(){
-	CreateClouds(cloudx + 100, cloudy + 80);
-	CreateClouds(cloudx + 160, cloudy + 100);
-	CreateClouds(cloudx + 90, cloudy + 70);
-	CreateClouds(cloudx + 100, cloudy + 90);
+	CreateClouds(cloudx + 105, cloudy + 85);
+	CreateClouds(cloudx + 150, cloudy + 110);
+	CreateClouds(cloudx + 100, cloudy + 75);
+	CreateClouds(cloudx + 105, cloudy + 95);
 	cloudx += 0.4;
 }
 
@@ -35,10 +53,8 @@ function CreateClouds(cloudx, cloudy) {
 	ellipse(cloudx - 30, cloudy + 15, 65, 60);
 }
 
-
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-
 	noStroke();
 	for (let i = 0; i < arraySize; i++) {
 		let randValue = parseInt(random(listOfColors.length));
@@ -50,23 +66,24 @@ function setup() {
 function draw() {
 	background(colorPalette[0]);
 	world(0, 0);
-	displayClouds();
-	
+	displayClouds()
+
 	for (let i = 0; i < arraySize; i++) {
 		drop[i].update();
 		drop[i].display();
+	
 	}
 }
+
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
-}
-
+}	
 
 
 //raindrops:
 class Drop {
 	constructor(col) {
-		this.x = random(-400, 600);
+		this.x = random(-400, 1080);
 		this.y = random(0);
 		this.alpha = random(255);
 		this.speed = random(5, 60);
@@ -92,6 +109,7 @@ function world() {
 	noStroke();
 	//mountains
 	fill("#939598");
+	
 	triangle(360, 170, 580, 550, 230, 440);
 	fill("#536486")
 	triangle(360, 170, 360, 550, 230, 440);
@@ -158,8 +176,8 @@ function world() {
 	arc(650, 525, 240, 205, PI, 0, OPEN);
 
 	//lake
-	//fill("#0071c2")
-	//arc(700, 525, 240, 180, 0, PI, OPEN);
+	fill("#0071c2")
+	arc(600, 525, 240, 180, 0, PI, OPEN);
 
 
 
@@ -228,7 +246,7 @@ function world() {
 	ellipse(323, 192, 30, 20);
 	ellipse(331, 182, 20, 20);
 
-	translate(50, 30)
+	translate(50, 22)
 	fill(67, 51, 8);
 	rect(320, 194, 10, 20);
 	fill(23, 69, 29);
@@ -267,7 +285,5 @@ function world() {
 	ellipse(327, 182, 20, 20);
 	ellipse(323, 199, 30, 20);
 	ellipse(331, 189, 20, 20);
-
-
 
 }

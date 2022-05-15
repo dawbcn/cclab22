@@ -5,7 +5,7 @@ body {
 }
 
 canvas {
-  display: block;
+  display:block;
 }
 
 html {
@@ -42,7 +42,7 @@ h3 {
 .text {
 
   font-family: "Copperplate";
-  font-size: 15pt;
+  font-size: 16pt;
   text-align: center;
   width: 300px;
   height: -330px;
@@ -62,37 +62,34 @@ h3 {
 .cloud {
   position: relative;
   left: 50px;
-  bottom: 890px;
+  bottom: 80px;
   width: 320px;
   height: 100px;
   background: rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
   border-radius: 100px;
-
 }
 
 .cloud2 {
   position: relative;
-  left: 850px;
-  bottom: 770px;
+  left: 1000px;
+  bottom: 780px;
   width: 280px;
   height: 100px;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
   border-radius: 100px;
-
 }
 
 .cloud3 {
   position: relative;
   left: 50px;
-  bottom: 700px;
+  bottom: 660px;
   width: 420px;
   height: 120px;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
   border-radius: 100px;
-
 }
 
 .cloud4 {
@@ -104,7 +101,6 @@ h3 {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
   border-radius: 100px;
-
 }
 
 .cloud5 {
@@ -116,7 +112,6 @@ h3 {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
   border-radius: 100px;
-
 }
 
 .cloud6 {
@@ -128,7 +123,28 @@ h3 {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
   border-radius: 100px;
+}
 
+.cloud7 {
+  position: relative;
+  left: 500px;
+  bottom: 800px;
+  width: 180px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
+  border-radius: 100px;
+}
+
+.cloud8 {
+  position: relative;
+  left: 900px;
+  bottom: 800px;
+  width: 280px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
+  border-radius: 100px;
 }
 
 a:link {
@@ -150,49 +166,31 @@ a:hover {
 }
 
 
-.controls {
+.lightningButton {
   position: absolute;
   font-family: "Copperplate";
-  font-size: 20pt;
-  text-align: center;
-  width: 300px;
-  height: 20px;
+  font-size: 14pt;
 
-  border-radius: 100px;
+  margin-top: 320px;
+  margin-bottom: 0px;
+  margin-left: 1095px;
+  margin-right: -100px;
 
-  margin-top: 70px;
-  margin-bottom: -90px;
-  margin-left: 1040px;
-  margin-right: 10px;
+  border-radius: 20px;
 
   padding: 20px 35px 20px 35px;
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 10px 10px rgba(225, 237, 242, 0.2);
+
+
 }
 
 .rainButton {
   position: absolute;
   font-family: "Copperplate";
   font-size: 14pt;
-  margin-top: 180px;
-  margin-bottom: -90px;
-  margin-left: 1175px;
-  margin-right: -100px;
 
-  border-radius: 20px;
-
-  padding: 20px 35px 20px 35px;
-
-}
-
-.lightningButton {
-  position: absolute;
-  font-family: "Copperplate";
-  font-size: 14pt;
-
-  margin-top: 260px;
+  margin-top: 420px;
   margin-bottom: 0px;
-  margin-left: 1155px;
+  margin-left: 1120px;
   margin-right: -100px;
 
   border-radius: 20px;
@@ -201,20 +199,47 @@ a:hover {
 
 
 }
-
-.cloudButton {
+.leavesButton{
   position: absolute;
   font-family: "Copperplate";
   font-size: 14pt;
 
-  margin-top: 340px;
+  margin-top: 520px;
   margin-bottom: 0px;
-  margin-left: 1165px;
+  margin-left: 1110px;
   margin-right: -100px;
 
   border-radius: 20px;
 
   padding: 20px 35px 20px 35px;
 
+}
+.birdButton{
+  position: absolute;
+  font-family: "Copperplate";
+  font-size: 14pt;
 
+  margin-top: 120px;
+  margin-bottom: 0px;
+  margin-left: 1115px;
+  margin-right: -100px;
+
+  border-radius: 20px;
+
+  padding: 20px 35px 20px 35px;
+}
+
+.windButton{
+  position: absolute;
+  font-family: "Copperplate";
+  font-size: 14pt;
+
+  margin-top: 220px;
+  margin-bottom: 0px;
+  margin-left: 1115px;
+  margin-right: -100px;
+
+  border-radius: 20px;
+
+  padding: 20px 35px 20px 35px;
 }
