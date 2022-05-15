@@ -12,6 +12,7 @@ let arraySize = 500;
 
 let listOfColors = ["#4a6583", "#6c8094", "#4e6881", "#697a8c", "#3c5369"];
 
+// sounds from https://soundspunos.com/nature/345-sounds-of-dry-leaves.html
 function preload() {
 	rain = loadSound("rain.mp3");
 	thunder = loadSound("thunder.mp3");
